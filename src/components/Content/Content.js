@@ -2,7 +2,7 @@ import React from 'react';
 import { Article } from './Article.js';
 
 export const Content = () => {
-    const contentItems = [
+    const contentItem = [
         {
             header: '15 полезных однострочных выражений JavaScript',
             text: 'Улучшение JavaScript-кода за пару минут перевод 15 Helpful JavaScript One-Liners',
@@ -68,7 +68,7 @@ export const Content = () => {
                 <div className="container">
                     <h1>Posts</h1>
                     <ul className="list">
-                        {contentItems.map(({ title, text, id }) => {
+                        {contentItem.map(({ title, text, id }) => {
                             return <Article title={title} text={text} key={id} />;
                         })}
                     </ul>
