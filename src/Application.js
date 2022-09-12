@@ -3,7 +3,7 @@ import { Header } from './components/Header/Header';
 import { Content } from './components/Content/Content';
 import { Footer } from './components/Footer/Footer';
 
-export const Application = () => {
+const Application = () => {
   return (
       <div className="wrapper">
         <Header />
@@ -12,3 +12,5 @@ export const Application = () => {
       </div>
   );
 };
+
+export default Application;
