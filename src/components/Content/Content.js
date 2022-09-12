@@ -68,8 +68,8 @@ export const Content = () => {
                 <div className="container">
                     <h1>Posts</h1>
                     <ul className="list">
-                        {contentItems.map(({ header, text, id }) => {
-                            return <Article header={header} text={text} key={id} />;
+                        {contentItems.map(({ title, text, id }) => {
+                            return <Article title={title} text={text} key={id} />;
                         })}
                     </ul>
                 </div>
